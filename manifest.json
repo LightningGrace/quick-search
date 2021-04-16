@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "Quick Search",
+	"description": "Select and search with a highlight and a click",
+	"version": "0.92",
+	"icons": {},
+
+	"action": {
+		"default_icon": "icon.png"
+	},
+
+	"background": {
+		"service_worker": "eventPage.js"
+	},
+
+	"permissions": ["contextMenus"]
+}

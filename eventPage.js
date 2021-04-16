@@ -1,3 +1,4 @@
+// Context menu registrations
 const contextMenu = [
 	{
 		id: 'contextMenu',
@@ -27,8 +28,10 @@ const contextMenu = [
 	}
 ];
 
+// Add all context menus
 contextMenu.forEach(menuItem => chrome.contextMenus.create(menuItem));
 
+// Context menu on click event handler
 chrome.contextMenus.onClicked.addListener(clickQuery => {
 	if (!clickQuery.selectionText) return;
 
